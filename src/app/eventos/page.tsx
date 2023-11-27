@@ -1,11 +1,13 @@
 'use client';
-import Botao from "@/components/eventos/botao";
-import Formulario from "@/components/eventos/formulario";
-import Layout from "@/components/eventos/layout";
-import Tabela from "@/components/eventos/tabela";
-import Evento from "@/core/Evento";
-import { atualizarEvento, cadastrarEvento, excluirEvento, fetchEventos } from "@/service/eventoService";
+import Botao from "../../components/eventos/botao"
+import Formulario from "../../components/eventos/formulario";
+import Layout from "../../components/eventos/layout";
+import Tabela from "../../components/eventos/tabela";
+import Evento from "../../core/Evento";
+import { atualizarEvento, cadastrarEvento, excluirEvento, fetchEventos } from "../../service/eventoService";
 import { useEffect, useState } from "react";
+import React from "react";
+
 
 export default function Eventos() {
 

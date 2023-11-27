@@ -1,4 +1,4 @@
-import { stringParaEntradaDeData } from "@/utils/converters";
+import { stringParaEntradaDeData } from "../utils/converters";
 
 export default class Evento {
     id: number | null;
