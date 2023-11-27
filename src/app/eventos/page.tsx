@@ -7,6 +7,7 @@ import Evento from "../../core/Evento";
 import { atualizarEvento, cadastrarEvento, excluirEvento, fetchEventos } from "../../service/eventoService";
 import { useEffect, useState } from "react";
 import React from "react";
+import '../../app/output.css'
 
 
 export default function Eventos() {
