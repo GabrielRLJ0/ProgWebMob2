@@ -3,7 +3,7 @@ import Botao from "../../components/eventos/botao"
 import Formulario from "../../components/eventos/formulario";
 import Layout from "../../components/eventos/layout";
 import Tabela from "../../components/eventos/tabela";
-import Evento from "../../core/Evento";
+import Evento from "../../core/Carta";
 import { atualizarEvento, cadastrarEvento, excluirEvento, fetchEventos } from "../../service/eventoService";
 import { useEffect, useState } from "react";
 import React from "react";
@@ -88,15 +88,14 @@ export default function Eventos() {
   return (
     <div className={`
      flex justify-center items-center min-h-screen
-     bg-gradient-to-bl from-indigo-1900 via-indigo-400 to-indigo-3900
      text-white`}>
-      <Layout titulo="Cadastro de eventos">
+      <Layout titulo="Cadastro de cartas">
         {visivel === 'tabela' ? (
           <>
-            <div className="flex justify-end">
+            <div className="flex justify-center">
               <Botao className="mb-4" cor="bg-gradient-to-r from-green-500 to-green-700"
                 onClick={() => novoEvento()}>
-                Novo evento
+                Adicionar Carta
               </Botao>
             </div>
             <Tabela eventos={eventos}

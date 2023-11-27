@@ -1,4 +1,4 @@
-import Evento from "@/core/Evento"
+import Evento from "@/core/Carta"
 import { IconeEdicao, IconeLixo } from "../icones/tabela"
 
 interface TabelaProps {
@@ -15,10 +15,10 @@ export default function Tabela(props: TabelaProps) {
         return (
             <tr>
                 <th className="text-left p-3">id</th>
-                <th className="text-left p-3">nome</th>
-                <th className="text-left p-3">data</th>
-                <th className="text-left p-3">descricao</th>
-                <th className="text-left p-3">status</th>
+                <th className="text-left p-3">Nome</th>
+                <th className="text-left p-3">Data</th>
+                <th className="text-left p-3">Tipo</th>
+                <th className="text-left p-3">Custo</th>
                 {exibirAcoes ? <th className="p-3">Ações</th> : false}
             </tr>
         )
@@ -32,8 +32,8 @@ export default function Tabela(props: TabelaProps) {
                     <td className="text-left p-3">{evento.id}</td>
                     <td className="text-left p-3">{evento.nome}</td>
                     <td className="text-left p-3">{evento.data}</td>
-                    <td className="text-left p-3">{evento.descricao}</td>
-                    <td className="text-left p-3">{evento.status}</td>
+                    <td className="text-left p-3">{evento.tipo}</td>
+                    <td className="text-left p-3">{evento.custo}</td>
                     {exibirAcoes 
                     ? renderizarAcoes(evento)
                     : false }

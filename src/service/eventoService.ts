@@ -1,15 +1,15 @@
-import Evento from '../core/Evento';
+import Evento from '../core/Carta';
 
 let eventosList: Evento[] = [
-  new Evento(1, "UPF em Dança",
-    "2023-11-27",
-    "Evento de dança",
-    "PREVISTO",
-  ),
-  new Evento(2, "UPF na feitech",
-    "2023-11-27",
-    "Evento de tecnologia",
-    "PREVISTO",
+  new Evento(1, "Ilha",
+  "03/11/2022",
+  "Terreno",
+  "0",
+),
+new Evento(2, "Horda Sem Respiro",
+  "10/11/2022",
+  "Criatura - Zumbi",
+  "2-N 1-P",
   )
 ]
 let proximoId = eventosList.length + 1;
