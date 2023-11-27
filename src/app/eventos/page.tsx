@@ -6,6 +6,8 @@ import Tabela from "@/components/eventos/tabela";
 import Evento from "@/core/Evento";
 import { atualizarEvento, cadastrarEvento, excluirEvento, fetchEventos } from "@/service/eventoService";
 import { useEffect, useState } from "react";
+import React from "react";
+
 
 export default function Eventos() {
 
