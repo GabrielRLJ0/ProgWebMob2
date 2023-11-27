@@ -10,11 +10,19 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+
+  /* Usando a cor de fundo com transparência */
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgba(var(--background-end-rgb), 0.5)  /* 0.5 é a transparência, ajuste conforme necessário */
     )
     rgb(var(--background-start-rgb));
-    
+
+  /* Adicionando a imagem como plano de fundo */
+  background-image: url('https://images.ctfassets.net/s5n2t79q9icq/3igpaHJHUt5BQ9AYqrqoza/b2f42b2cac5ee52ef366323f7b229ba7/nicol-bolas-1920.jpg?q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
