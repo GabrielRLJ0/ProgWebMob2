@@ -1,7 +1,7 @@
-import Evento from "@/core/Evento";
+import Evento from "../../core/Evento";
 import Entrada from "./entrada";
 import { useState } from "react";
-import { stringParaEntradaDeData } from "@/utils/converters";
+import { stringParaEntradaDeData } from "../../utils/converters";
 import Botao from "./botao";
 
 interface FormularioProps {
