@@ -86,14 +86,14 @@ export default function Eventos() {
   }
 
   return (
-    <div className={`
-     flex justify-center items-center min-h-screen
-     text-white`}>
+    <div className="
+     flex justify-center items-center h-screen
+     text-white bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900">
       <Layout titulo="Cadastro de cartas">
         {visivel === 'tabela' ? (
           <>
             <div className="flex justify-center">
-              <Botao className="mb-4" cor="bg-gradient-to-r from-green-500 to-green-700"
+              <Botao className="mb-4" cor="bg-gradient-to-r from-green-500 to-green-700 bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900"
                 onClick={() => novoEvento()}>
                 Adicionar Carta
               </Botao>
